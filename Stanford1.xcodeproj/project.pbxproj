@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E906827B1A84D1580088FACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E906827A1A84D1580088FACD /* AppDelegate.swift */; };
+		E906827E1A84D1580088FACD /* Stanford1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E906827C1A84D1580088FACD /* Stanford1.xcdatamodeld */; };
+		E90682801A84D1580088FACD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E906827F1A84D1580088FACD /* ViewController.swift */; };
+		E90682831A84D1580088FACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90682811A84D1580088FACD /* Main.storyboard */; };
+		E90682851A84D1580088FACD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90682841A84D1580088FACD /* Images.xcassets */; };
+		E90682881A84D1580088FACD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E90682861A84D1580088FACD /* LaunchScreen.xib */; };
+		E90682941A84D1580088FACD /* Stanford1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90682931A84D1580088FACD /* Stanford1Tests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E906828E1A84D1580088FACD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E906826D1A84D1580088FACD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E90682741A84D1580088FACD;
+			remoteInfo = Stanford1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E90682751A84D1580088FACD /* Stanford1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stanford1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90682791A84D1580088FACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E906827A1A84D1580088FACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E906827D1A84D1580088FACD /* Stanford1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stanford1.xcdatamodel; sourceTree = "<group>"; };
+		E906827F1A84D1580088FACD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E90682821A84D1580088FACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E90682841A84D1580088FACD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E90682871A84D1580088FACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E906828D1A84D1580088FACD /* Stanford1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Stanford1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90682921A84D1580088FACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E90682931A84D1580088FACD /* Stanford1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stanford1Tests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E90682721A84D1580088FACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E906828A1A84D1580088FACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E906826C1A84D1580088FACD = {
+			isa = PBXGroup;
+			children = (
+				E90682771A84D1580088FACD /* Stanford1 */,
+				E90682901A84D1580088FACD /* Stanford1Tests */,
+				E90682761A84D1580088FACD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E90682761A84D1580088FACD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E90682751A84D1580088FACD /* Stanford1.app */,
+				E906828D1A84D1580088FACD /* Stanford1Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E90682771A84D1580088FACD /* Stanford1 */ = {
+			isa = PBXGroup;
+			children = (
+				E906827A1A84D1580088FACD /* AppDelegate.swift */,
+				E906827F1A84D1580088FACD /* ViewController.swift */,
+				E90682811A84D1580088FACD /* Main.storyboard */,
+				E90682841A84D1580088FACD /* Images.xcassets */,
+				E90682861A84D1580088FACD /* LaunchScreen.xib */,
+				E906827C1A84D1580088FACD /* Stanford1.xcdatamodeld */,
+				E90682781A84D1580088FACD /* Supporting Files */,
+			);
+			path = Stanford1;
+			sourceTree = "<group>";
+		};
+		E90682781A84D1580088FACD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E90682791A84D1580088FACD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E90682901A84D1580088FACD /* Stanford1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E90682931A84D1580088FACD /* Stanford1Tests.swift */,
+				E90682911A84D1580088FACD /* Supporting Files */,
+			);
+			path = Stanford1Tests;
+			sourceTree = "<group>";
+		};
+		E90682911A84D1580088FACD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E90682921A84D1580088FACD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E90682741A84D1580088FACD /* Stanford1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E90682971A84D1580088FACD /* Build configuration list for PBXNativeTarget "Stanford1" */;
+			buildPhases = (
+				E90682711A84D1580088FACD /* Sources */,
+				E90682721A84D1580088FACD /* Frameworks */,
+				E90682731A84D1580088FACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stanford1;
+			productName = Stanford1;
+			productReference = E90682751A84D1580088FACD /* Stanford1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E906828C1A84D1580088FACD /* Stanford1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E906829A1A84D1580088FACD /* Build configuration list for PBXNativeTarget "Stanford1Tests" */;
+			buildPhases = (
+				E90682891A84D1580088FACD /* Sources */,
+				E906828A1A84D1580088FACD /* Frameworks */,
+				E906828B1A84D1580088FACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E906828F1A84D1580088FACD /* PBXTargetDependency */,
+			);
+			name = Stanford1Tests;
+			productName = Stanford1Tests;
+			productReference = E906828D1A84D1580088FACD /* Stanford1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E906826D1A84D1580088FACD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Paul Brewczynski";
+				TargetAttributes = {
+					E90682741A84D1580088FACD = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					E906828C1A84D1580088FACD = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = E90682741A84D1580088FACD;
+					};
+				};
+			};
+			buildConfigurationList = E90682701A84D1580088FACD /* Build configuration list for PBXProject "Stanford1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E906826C1A84D1580088FACD;
+			productRefGroup = E90682761A84D1580088FACD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E90682741A84D1580088FACD /* Stanford1 */,
+				E906828C1A84D1580088FACD /* Stanford1Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E90682731A84D1580088FACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90682831A84D1580088FACD /* Main.storyboard in Resources */,
+				E90682881A84D1580088FACD /* LaunchScreen.xib in Resources */,
+				E90682851A84D1580088FACD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E906828B1A84D1580088FACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E90682711A84D1580088FACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90682801A84D1580088FACD /* ViewController.swift in Sources */,
+				E906827E1A84D1580088FACD /* Stanford1.xcdatamodeld in Sources */,
+				E906827B1A84D1580088FACD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E90682891A84D1580088FACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90682941A84D1580088FACD /* Stanford1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E906828F1A84D1580088FACD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E90682741A84D1580088FACD /* Stanford1 */;
+			targetProxy = E906828E1A84D1580088FACD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E90682811A84D1580088FACD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E90682821A84D1580088FACD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E90682861A84D1580088FACD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E90682871A84D1580088FACD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E90682951A84D1580088FACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E90682961A84D1580088FACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E90682981A84D1580088FACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Stanford1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E90682991A84D1580088FACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Stanford1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E906829B1A84D1580088FACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Stanford1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stanford1.app/Stanford1";
+			};
+			name = Debug;
+		};
+		E906829C1A84D1580088FACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Stanford1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stanford1.app/Stanford1";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E90682701A84D1580088FACD /* Build configuration list for PBXProject "Stanford1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90682951A84D1580088FACD /* Debug */,
+				E90682961A84D1580088FACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E90682971A84D1580088FACD /* Build configuration list for PBXNativeTarget "Stanford1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90682981A84D1580088FACD /* Debug */,
+				E90682991A84D1580088FACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E906829A1A84D1580088FACD /* Build configuration list for PBXNativeTarget "Stanford1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E906829B1A84D1580088FACD /* Debug */,
+				E906829C1A84D1580088FACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E906827C1A84D1580088FACD /* Stanford1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E906827D1A84D1580088FACD /* Stanford1.xcdatamodel */,
+			);
+			currentVersion = E906827D1A84D1580088FACD /* Stanford1.xcdatamodel */;
+			path = Stanford1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E906826D1A84D1580088FACD /* Project object */;
+}
