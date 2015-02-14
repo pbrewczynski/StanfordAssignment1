@@ -12,7 +12,8 @@ class ViewController: UIViewController {
     
     // MARK: Stored properties
     @IBOutlet weak var display: UILabel!
-    var userIsInTheMiddleOfEnteringNumber = false;
+    var userIsInTheMiddleOfEnteringNumber   = false;
+    var userEnteredDotSign                  = false;
     var stack : Array<Double> = Array<Double>();
     
     // MARK: Computed properties
@@ -25,19 +26,19 @@ class ViewController: UIViewController {
         }
     }
     
-    
     // MARK: IBActions
     @IBAction func digitTouchUpInside(sender: UIButton) {
         let digit = sender.currentTitle!
-        
-        if userIsInTheMiddleOfEnteringNumber {
-            self.display.text = self.display.text! + digit
-        } else {
-            self.display.text = digit
-            self.userIsInTheMiddleOfEnteringNumber = true
-        }
+        self.enterPartOfNumberToDisplay(digit);
     }
     
+    @IBAction func dotTouchUpInside() {
+        
+        if !self.userEnteredDotSign {
+            self.enterPartOfNumberToDisplay(".") // magic string ?
+            self.userEnteredDotSign = true
+        }
+    }
     
     @IBAction func operationTouchUpInside(sender: UIButton) {
         let operationSign = sender.currentTitle!;
@@ -47,11 +48,11 @@ class ViewController: UIViewController {
         }
         
         switch operationSign {
-        case "×": self.performCalculatorOperation() { $1 * $0 }
-        case "÷": self.performCalculatorOperation() { $1 / $0 }
-        case "+": self.performCalculatorOperation() { $1 + $0 }
-        case "−": self.performCalculatorOperation() { $1 - $0 }
-        case "√": self.performCalculatorOperation() { sqrt($0)}
+        case "×"    : self.performCalculatorOperation() { $1 * $0 }
+        case "÷"    : self.performCalculatorOperation() { $1 / $0 }
+        case "+"    : self.performCalculatorOperation() { $1 + $0 }
+        case "−"    : self.performCalculatorOperation() { $1 - $0 }
+        case "√"    : self.performCalculatorOperation() { sqrt($0)}
         default: break
         }
     }
@@ -60,28 +61,40 @@ class ViewController: UIViewController {
         self.finishEnteringNumber()
     }
     
-  
-    
+    func enterPartOfNumberToDisplay(numberPart: String) {
+        if userIsInTheMiddleOfEnteringNumber {
+            self.display.text = self.display.text! + numberPart
+        } else {
+            self.display.text = numberPart
+            self.userIsInTheMiddleOfEnteringNumber = true
+        }   
+    }
     // MARK: Model
     func performCalculatorOperation(operation: (Double, Double) -> Double) { // Two arguments operation
         if(self.stack.count >= 2) {
             self.displayValue = operation(self.stack.removeLast(), self.stack.removeLast())
-            self.finishEnteringNumber() // it will push result on the stack
+            self.addDisplayValueToStack() // it will push result on the stack
         }
-        print("Stack afer operation \(self.stack)")
+        println("Stack afer operation \(self.stack)")
     }
     
     func performCalculatorOperation(operation: (Double) -> Double) {
         if(self.stack.count >= 1) {
             self.displayValue = operation(self.stack.removeLast())
-            self.finishEnteringNumber()
+            self.addDisplayValueToStack()
         }
-        print("Stack afer operation \(self.stack)")
+        println("Stack afer operation \(self.stack)")
     }
     
+    
     func finishEnteringNumber() {
-        self.userIsInTheMiddleOfEnteringNumber = false
-        self.stack.append(self.displayValue)
-        println("Finished entering number - stack \(stack)")
+        self.userIsInTheMiddleOfEnteringNumber  = false
+        self.userEnteredDotSign                 = false
+        self.addDisplayValueToStack()
     }
+    
+    func addDisplayValueToStack () {
+        self.stack.append(self.displayValue)
+    }
+    
 }
